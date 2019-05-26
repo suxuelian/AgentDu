@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c0deea</color>
+    <color name="colorPrimaryDark">#85bdc2</color>
+    <color name="colorAccent">#c19ba8</color>
+
+    <!--添加-->
+    <color name="white">#45eded</color>
+    <color name="ba_color">#708897</color>
+</resources>

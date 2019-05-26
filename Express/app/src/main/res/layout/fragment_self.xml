@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/moom">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/moom"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="69dp">
+
+        <com.example.root.express.widget.RoundImageView
+            android:id="@+id/head_sculpture_iamge"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="46dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head_sculpture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="84dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/ba_color"
+            android:text="编辑"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/head_sculpture_iamge"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="84dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/ba_color"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_button" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="未登录"
+            android:textColor="@color/white"
+
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/head_sculpture_iamge"
+            app:layout_constraintTop_toBottomOf="@+id/head_sculpture_iamge" />
+
+        <TextView
+            android:id="@+id/reciver"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginTop="16dp"
+            android:text="大家好，我是gugu"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logout_button">
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="84dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/ba_color"
+                android:text="添加订单"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/main_button"
+                android:layout_width="84dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/ba_color"
+                android:text="主页"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/add_button"
+                app:layout_constraintTop_toBottomOf="@+id/add_button" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

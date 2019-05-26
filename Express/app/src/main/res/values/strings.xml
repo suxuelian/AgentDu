@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AgentDoo</string>
+
+    <string name="order_id">订单号</string>
+    <string name="promulgator">发布者</string>
+    <string name="receiver">接收者</string>
+    <string name="name">姓名</string>
+    <string name="tel">电话</string>
+    <string name="take_order">点击接收订单</string>
+    <string name="isSolved">订单是否被处理</string>
+
+    <string name="address_before">取货点</string>
+    <string name="address_after">送货点</string>
+    <string name="take_code">取货码</string>
+
+    <string name="new_order">新订单</string>
+    <string name="show_subtitle">显示总订单数</string>
+    <string name="hide_subtitle">隐藏总订单数</string>
+    <string name="subtitle_format">%1$d orders</string>
+
+    <string name="tips_No1psw">请输入密码</string>
+    <string name="tips_No2psw">请确认密码</string>
+    <string name="login_alert_message">登录即代表阅读并同意服务条款</string>
+    <string name="title_loginPage">你还未登录，请先登录</string>
+    <string name="ed_nameTips">输入账号</string>
+    <string name="ed_tipsContext">输入密码</string>
+    <string name="tv_tips_login">新用户注册</string>
+    <string name="tv_tips_findPassword">忘记密码？</string>
+    <string name="title_register">注册</string>
+    <string name="tips_account">账号</string>
+
+</resources>

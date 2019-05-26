@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/order_id_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/order_id"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="orderid"
+        app:layout_constraintBottom_toBottomOf="@+id/order_id_label"
+        app:layout_constraintStart_toEndOf="@+id/order_id_label" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/address_before"
+        app:layout_constraintStart_toStartOf="@+id/order_id_label"
+        app:layout_constraintTop_toBottomOf="@+id/order_id_label" />
+
+    <TextView
+        android:id="@+id/address_before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:text="before"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/textView6" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/address_after"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/address_after"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="after"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/textView7" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/take_code"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="code"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/promulgator"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/is_order_solved"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tv_p_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/name"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/promulgator_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="name"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_p_name"
+        app:layout_constraintStart_toEndOf="@+id/tv_p_name" />
+
+    <TextView
+        android:id="@+id/tv_p_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tel"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_p_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_p_name" />
+
+    <TextView
+        android:id="@+id/promulgator_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="tel"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_p_tel"
+        app:layout_constraintStart_toEndOf="@+id/tv_p_tel" />
+
+
+    <TextView
+        android:id="@+id/reciver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/receiver"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_p_tel"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_receiver_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/name"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_p_tel"
+        app:layout_constraintTop_toBottomOf="@+id/reciver"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_reciver_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_receiver_name"
+        app:layout_constraintStart_toEndOf="@+id/tv_receiver_name" />
+
+    <TextView
+        android:id="@+id/tv_reciver_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tel"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_receiver_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_receiver_name" />
+
+    <EditText
+        android:id="@+id/et_reciver_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_reciver_tel"
+        app:layout_constraintStart_toEndOf="@+id/tv_reciver_tel" />
+
+    <Button
+        android:id="@+id/take_order"
+        android:layout_width="162dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/take_order"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/is_order_solved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:checked="false"
+        android:text="@string/isSolved"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
