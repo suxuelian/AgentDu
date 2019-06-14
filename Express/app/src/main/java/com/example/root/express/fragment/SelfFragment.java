@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,11 +17,10 @@ import android.widget.Toast;
 
 import com.example.root.express.OrderLab;
 import com.example.root.express.R;
-import com.example.root.express.activity.OrderActivity;
 import com.example.root.express.activity.OrderListActivity;
 import com.example.root.express.activity.PromulgationActivity;
-import com.example.root.express.loginAndEnroll.LoginActivity;
-import com.example.root.express.loginAndEnroll.User;
+import com.example.root.express.EnrolAndLogin.LoginActivity;
+import com.example.root.express.EnrolAndLogin.User;
 
 
 public class SelfFragment extends Fragment {
@@ -28,6 +28,8 @@ public class SelfFragment extends Fragment {
 
     User mUser;
     TextView tvName;
+    TextView tvId;
+    TextView tvTel;
     Button btLogout;
     Button btEdit;
     Button btAddOrder;
@@ -51,6 +53,14 @@ public class SelfFragment extends Fragment {
         //用户名
         tvName.setText(mUser.getUsername());
 
+        //id
+        tvId = (TextView)view.findViewById(R.id.tv_id);
+        tvId.setText(mUser.getObjectId());
+
+        //Tel
+        tvTel = (TextView)view.findViewById(R.id.tv_tel);
+        tvTel.setText(mUser.getTel());
+
 
         //退出登录
         btLogout = (Button)view.findViewById(R.id.logout_button);
@@ -61,7 +71,11 @@ public class SelfFragment extends Fragment {
                 Intent intent  = new Intent(getActivity(), LoginActivity.class);
                 startActivity(intent);
                 getActivity().finish();
-                Toast.makeText(getActivity(), "退出登录成功",Toast.LENGTH_SHORT).show();
+
+                Toast toast =Toast.makeText(getActivity(), "退出登录成功", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER,0,500);
+                toast.show();
+
             }
         });
 

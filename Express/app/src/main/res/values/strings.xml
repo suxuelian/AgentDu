@@ -7,6 +7,7 @@
     <string name="name">姓名</string>
     <string name="tel">电话</string>
     <string name="take_order">点击接收订单</string>
+    <string name="edit_order">点击修改订单</string>
     <string name="isSolved">订单是否被处理</string>
 
     <string name="address_before">取货点</string>

@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.root.express.R;
-import com.example.root.express.loginAndEnroll.User;
+import com.example.root.express.EnrolAndLogin.User;
 
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;

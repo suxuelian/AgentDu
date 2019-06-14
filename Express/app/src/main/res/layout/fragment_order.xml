@@ -2,20 +2,21 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
+    android:id="@+id/order_constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout_editor_absoluteY="25dp">
+    tools:layout_editor_absoluteY="25dp"
+    android:background="@drawable/moom">
 
     <TextView
         android:id="@+id/order_id_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="@string/order_id"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:text="orderid"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/order_id_label"
         app:layout_constraintStart_toEndOf="@+id/order_id_label" />
 
@@ -32,8 +34,10 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/address_before"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/order_id_label"
         app:layout_constraintTop_toBottomOf="@+id/order_id_label" />
 
@@ -44,6 +48,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="32dp"
         android:text="before"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintStart_toEndOf="@+id/textView6" />
 
@@ -52,8 +57,9 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/address_after"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -63,6 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:text="after"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintStart_toEndOf="@+id/textView7" />
 
@@ -71,8 +78,9 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/take_code"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -82,6 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:text="code"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView8"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         tools:ignore="MissingConstraints" />
@@ -91,12 +100,14 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="@string/promulgator"
         android:textAllCaps="false"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/is_order_solved"
-        tools:layout_editor_absoluteX="16dp" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/is_order_solved" />
 
     <TextView
         android:id="@+id/tv_p_name"
@@ -116,6 +127,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:text="name"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_p_name"
         app:layout_constraintStart_toEndOf="@+id/tv_p_name" />
 
@@ -141,71 +153,72 @@
         app:layout_constraintStart_toEndOf="@+id/tv_p_tel" />
 
 
-    <TextView
-        android:id="@+id/reciver"
-        android:layout_width="wrap_content"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/revicer_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/receiver"
-        android:textAllCaps="false"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/tv_p_tel"
-        tools:ignore="MissingConstraints" />
-
-
-    <TextView
-        android:id="@+id/tv_receiver_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/name"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_p_tel"
-        app:layout_constraintTop_toBottomOf="@+id/reciver"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/et_reciver_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_receiver_name"
-        app:layout_constraintStart_toEndOf="@+id/tv_receiver_name" />
-
-    <TextView
-        android:id="@+id/tv_reciver_tel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/tel"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_receiver_name"
-        app:layout_constraintTop_toBottomOf="@+id/tv_receiver_name" />
-
-    <EditText
-        android:id="@+id/et_reciver_tel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_reciver_tel"
-        app:layout_constraintStart_toEndOf="@+id/tv_reciver_tel" />
-
-    <Button
-        android:id="@+id/take_order"
-        android:layout_width="162dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="@string/take_order"
-        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_p_tel"
+        tools:layout_editor_absoluteX="16dp">
 
+        <TextView
+            android:id="@+id/reciver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/receiver"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+        <TextView
+            android:id="@+id/tv_receiver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/name"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reciver"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/et_reciver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_receiver_name"
+            app:layout_constraintStart_toEndOf="@+id/tv_receiver_name" />
+
+        <TextView
+            android:id="@+id/tv_reciver_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tel"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_receiver_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_receiver_name" />
+
+        <TextView
+            android:id="@+id/et_reciver_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_reciver_tel"
+            app:layout_constraintStart_toEndOf="@+id/tv_reciver_tel" />
+
+    </android.support.constraint.ConstraintLayout>
 
     <CheckBox
         android:id="@+id/is_order_solved"
@@ -218,5 +231,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/code"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/take_order"
+        android:layout_width="151dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/take_order"
+        android:textSize="18sp"
+        android:background="@color/ba_color"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/edit_order"
+        android:layout_width="151dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/edit_order"
+        android:textSize="18sp"
+        android:background="@color/ba_color"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/take_order"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

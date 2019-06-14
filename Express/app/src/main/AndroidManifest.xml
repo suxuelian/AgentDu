@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -25,8 +25,8 @@
 
         <activity android:name=".activity.OrderListActivity" >
         </activity>
-        <activity android:name=".loginAndEnroll.EnrollActivity"/>
-        <activity android:name=".loginAndEnroll.LoginActivity">
+        <activity android:name=".EnrolAndLogin.EnrolActivity"/>
+        <activity android:name=".EnrolAndLogin.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -35,6 +35,8 @@
 
         </activity>
 
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.EditOrderActivity"/>
         <activity android:name=".activity.OrderPagerActivity"/>
         <activity android:name=".activity.PromulgationActivity"/>
         <activity android:name=".activity.SelfActivity">

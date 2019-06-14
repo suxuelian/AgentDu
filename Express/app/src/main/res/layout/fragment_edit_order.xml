@@ -9,13 +9,13 @@
 
     <TextView
         android:id="@+id/promulgation_label"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:text="请填写订单信息"
-        android:textColor="@color/grey"
+        android:text="请修改订单信息"
+        android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,9 +50,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="84dp"
-            android:hint="请填写取货点"
-            android:textColor="@color/grey"
             android:theme="@style/MyEditText"
+            android:textColor="@color/grey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView3" />
 
@@ -86,9 +85,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="84dp"
-            android:hint="请填写送货目的地"
-            android:textColor="@color/grey"
             android:theme="@style/MyEditText"
+            android:textColor="@color/grey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView4" />
 
@@ -121,28 +119,37 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="84dp"
-            android:hint="请填写提货码"
             android:textColor="@color/grey"
+            android:theme="@style/MyEditText"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView5"
-            tools:ignore="MissingConstraints"
-            android:theme="@style/MyEditText"/>
+            tools:ignore="MissingConstraints" />
 
     </android.support.constraint.ConstraintLayout>
 
     <Button
-        android:id="@+id/publish_order"
-        android:layout_width="230dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:id="@+id/save_order"
+        android:layout_width="151dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="24dp"
         android:background="@color/ba_color"
-        android:text="发布订单"
+        android:text="保存"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/delete_order"
+        android:layout_width="151dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/ba_color"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/save_order"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

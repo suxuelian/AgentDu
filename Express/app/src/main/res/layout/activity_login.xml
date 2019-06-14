@@ -5,7 +5,7 @@
     android:id="@+id/backgroundLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loginAndEnroll.LoginActivity"
+    tools:context=".EnrolAndLogin.LoginActivity"
     tools:layout_editor_absoluteY="25dp"
     android:background="@drawable/moom"
     android:alpha="50">
@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/title_loginPage"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
@@ -44,10 +44,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:hint="@string/ed_nameTips"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textSize="20sp"
-            android:theme="@style/MyEditText"/>
+            android:textColor="@color/ba_color"
+            android:textColorHint="@color/ba_color"
+            android:textSize="24sp"
+            android:theme="@style/MyEditText" />
 
     </LinearLayout>
 
@@ -68,22 +68,22 @@
             android:layout_height="wrap_content"
             android:hint="@string/ed_tipsContext"
             android:inputType="textPassword"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textSize="20sp"
-            android:theme="@style/MyEditText"/>
+            android:textColor="@color/ba_color"
+            android:textColorHint="@color/ba_color"
+            android:textSize="24sp"
+            android:theme="@style/MyEditText" />
     </LinearLayout>
 
     <ToggleButton
         android:id="@+id/tb_isShowPsw"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="16dp"
         android:background="@drawable/toggle_drawable_selector"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/passwordlinearLayout"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/passwordlinearLayout" />
 
     <LinearLayout
         android:id="@+id/loginlinearLayout"
@@ -123,10 +123,9 @@
             android:id="@+id/tv_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tv_tips_login"
             android:autoLink="all"
-            android:textColor="#d5d0d6"
-            android:textStyle="bold" />
+            android:text="@string/tv_tips_login"
+            android:textColor="@color/black" />
     </LinearLayout>
 
 
@@ -143,7 +142,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="@string/login_alert_message" />
     </LinearLayout>
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/moom"
-    tools:context=".loginAndEnroll.EnrollActivity"
+    tools:context=".EnrolAndLogin.EnrolActivity"
     tools:layout_editor_absoluteY="25dp">
 
 
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:text="注册"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/grey"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_linearLayout">
 
@@ -46,8 +46,8 @@
             android:layout_marginStart="0dp"
             android:hint="@string/tips_account"
             android:singleLine="true"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
             android:textSize="18sp"
             android:theme="@style/MyEditText" />
     </RelativeLayout>
@@ -68,8 +68,8 @@
             android:inputType="textPassword"
             android:maxLength="15"
             android:singleLine="true"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
             android:textSize="18sp"
             android:theme="@style/MyEditText"/>
     </RelativeLayout>
@@ -90,8 +90,8 @@
             android:inputType="textPassword"
             android:maxLength="15"
             android:singleLine="true"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/grey"
             android:textSize="18sp"
             android:theme="@style/MyEditText"/>
     </RelativeLayout>
